@@ -7,7 +7,6 @@ class BluetoothStore extends BaseStore {
 
   constructor() {
     super();
-    this._looper();
     this.connectionStatus = BluetoothStatus.IDLE;
     this.discoveredCollars = {}; // all the collars discovered while scanning
   }

@@ -4,8 +4,6 @@
  import AppStore from '../../stores/AppStore';
  import AppActions from '../../actions/AppActions';
 
- const NOTIFY_SYNC_DELAY = 30000; // 30 seconds
-
 class InnerMain extends React.Component {
 
   shouldComponentUpdate(nextProps) {
@@ -33,7 +31,6 @@ class Main extends React.Component {
     super(props);
     this.state = this.getDefaultState();
     this._listenForAppStoreChanges = this._listenForAppStoreChanges.bind(this);
-    this._listenForEventStoreChanges = this._listenForEventStoreChanges.bind(this);
     this._hideSidebar = this._hideSidebar.bind(this);
   }
 
@@ -60,19 +57,6 @@ class Main extends React.Component {
     });
   }
 
-  _listenForEventStoreChanges() {
-    clearTimeout(this.delayEventSync);
-    this.delayEventSync = setTimeout(() => {
-      // we don't want to do anything if the user is offline or the app is running
-      // in the background
-      let events = EventStore.getAll();
-      if (AppStore.isOffline() || AppStore.inBackground() || !events.length) return;
-      if (events.length < 50 || events.length >= 50 && AppStore.wifiConnection()) {
-        AppActions.syncEvents(events);
-      }
-    }, NOTIFY_SYNC_DELAY); // 30 seconds
-  }
-
   _hideSidebar(event) {
     if (this.state.menuExpanded) {
       if (this.isDescendant(document.getElementById('inner-main'), event.target) && event.target.id !== 'toggle-menu') {
@@ -87,12 +71,10 @@ class Main extends React.Component {
 
   componentWillMount() {
     AppStore.addChangeListener(this._listenForAppStoreChanges);
-    EventStore.addChangeListener(this._listenForEventStoreChanges);
   }
 
   componentWillUnmount() {
     AppStore.removeChangeListener(this._listenForAppStoreChanges);
-    EventStore.removeChangeListener(this._listenForEventStoreChanges);
   }
 
   // RENDER
