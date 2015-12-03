@@ -3,7 +3,6 @@ import AppDispatcher from '../dispatchers/appDispatcher';
 import {getCharacteristicsFromDeviceData, parseHexBytesToNumber, logTimestamp} from '../utils/helpers';
 import BluetoothService from '../bluetooth/bluetoothService';
 import BluetoothStore from '../stores/BluetoothStore';
-import AccountStore from '../stores/AccountStore';
 
 const RETRIES = 3;
 

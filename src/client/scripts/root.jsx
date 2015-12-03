@@ -2,7 +2,6 @@ import React from 'react';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import {Router, Route} from 'react-router';
 import HashHistory from 'react-router/lib/HashHistory';
-import {isLoggedIn} from './utils/authentication';
 
 // Pages
 import HomePage from './components/pages/Home.jsx';

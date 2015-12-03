@@ -2,7 +2,6 @@
  import classnames from 'classnames';
  import Sidebar from './Sidebar.jsx';
  import AppStore from '../../stores/AppStore';
- import EventStore from '../../stores/EventStore';
  import AppActions from '../../actions/AppActions';
 
  const NOTIFY_SYNC_DELAY = 30000; // 30 seconds
