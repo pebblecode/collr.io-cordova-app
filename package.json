@@ -39,7 +39,7 @@
     "babelify": "~7.2.0",
     "browserify": "~12.0.1",
     "contextify": "0.1.15",
-    "cordova-lib": "~5.1.1",
+    "cordova-lib": "~5.4.1",
     "del": "~0.1.1",
     "eslint": "~1.0.0",
     "eslint-config-pebblecode": "~1.5.0",
