@@ -1,0 +1,33 @@
+// Colours
+
+$body-bg: #fff;
+$body-bg-off: #F9F9F9;
+
+$intro-screens-grad-dark: #20409a;
+$intro-screens-grad-light: #1656a4;
+$intro-screens-bg: linear-gradient(to bottom, $intro-screens-grad-dark, $intro-screens-grad-light);
+$intro-screens-input: #ececec;
+$intro-screens-input-bg: #153c7f;
+
+$navy-dark: #273548;
+$blue-grey: #586d9f;
+$grey-text: #5c5b5c;
+$grey-light: #d8d8d8;
+$grey-lighter: #eeeef1;
+$ink: #4A4A4A;
+$ink-light: #9B9B9B;
+$yellow: #FEE140;
+$red: #EF6462;
+$bluetooth-blue: #2ea3f2;
+
+// collar states
+$accessing-bg: #F5F5F5;
+$accessing-fail-bg: #F07B75;
+$error-grad-dark: #a01125;
+$error-grad-light: #ef6462;
+
+$alert-bg: linear-gradient(to bottom, $error-grad-light, $error-grad-dark);
+
+// headers
+
+$intro-screens-header-font-size: 18px;

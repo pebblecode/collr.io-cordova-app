@@ -1,0 +1,30 @@
+.menu-expanded .sidebar  {
+  position: absolute;
+  height: 100%;
+  background-color: $navy-dark;
+  width: 100px;
+  top: 0;
+  right: 0;
+  display: block;
+  .menu-item {
+  	color: #fff;
+  	text-decoration: none;
+  	padding: 6vh 20px 5vh;
+  	text-align: center;
+  	display: block;
+  	font-size: 0.8em;
+  	border-bottom: 1px solid lighten($navy-dark, 10%);
+
+    p {
+      line-height: 16px;
+      padding-top: 8px;
+    }
+  }
+  .app-info {
+    position: absolute;
+    bottom: 5px;
+    text-align: center;
+    width: 100%;
+    color: #666;
+  }
+}

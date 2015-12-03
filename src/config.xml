@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" id="{{BUNDLE_ID}}" version="0.7.1">
+
+    <name>Collr.io</name>
+
+    <description>Sparkles for pets</description>
+
+    <author href="http://pebblecode.com">Pebble Code</author>
+
+    <content src="index.html"/>
+    <access origin="*"/>
+
+    <plugin name="File" value="org.apache.cordova.FileUtils"/>
+    <plugin name="FileTransfer" value="org.apache.cordova.FileTransfer"/>
+    <plugin name="File" value="CDVFile"/>
+    <plugin name="FileTransfer" value="CDVFileTransfer"/>
+
+    <preference name="iosExtraFilesystems" value="library,library-nosync,documents,documents-nosync,cache,bundle,root"/>
+    <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,root"/>
+
+    <preference name="BackupWebStorage" value="local"/>
+    <preference name="Orientation" value="portrait"/>
+    <preference name="StatusBarBackgroundColor" value="#000000"/>
+    <preference name="StatusBarStyle" value="blacktranslucent"/>
+    <preference name="BackgroundColor" value="0x264b98ff"/>
+    <preference name="DisallowOverscroll" value="true"/>
+
+    <platform name="android">
+        <icon src="res/android/drawable-hdpi/ic_launcher.png" density="hdpi"/>
+        <icon src="res/android/drawable-ldpi/ic_launcher.png" density="ldpi"/>
+        <icon src="res/android/drawable-mdpi/ic_launcher.png" density="mdpi"/>
+        <icon src="res/android/drawable-xhdpi/ic_launcher.png" density="xhdpi"/>
+        <icon src="res/android/drawable-xxhdpi/ic_launcher.png" density="xxhdpi"/>
+        <icon src="res/android/drawable-xxxhdpi/ic_launcher.png" density="xxxhdpi"/>
+
+        <splash src="res/android/splash/splash-land-hdpi.png" density="land-hdpi"/>
+        <splash src="res/android/splash/splash-land-ldpi.png" density="land-ldpi"/>
+        <splash src="res/android/splash/splash-land-mdpi.png" density="land-mdpi"/>
+        <splash src="res/android/splash/splash-land-xhdpi.png" density="land-xhdpi"/>
+        <splash src="res/android/splash/splash-port-hdpi.png" density="port-hdpi"/>
+        <splash src="res/android/splash/splash-port-ldpi.png" density="port-ldpi"/>
+        <splash src="res/android/splash/splash-port-mdpi.png" density="port-mdpi"/>
+        <splash src="res/android/splash/splash-port-xhdpi.png" density="port-xhdpi"/>
+    </platform>
+
+    <platform name="ios">
+        <icon src="res/ios/AppIcon.appiconset/Icon-60@3x.png" width="180" height="180"/>
+        <icon src="res/ios/icon-60.png" width="60" height="60"/>
+        <icon src="res/ios/AppIcon.appiconset/Icon-60@2x.png" width="120" height="120"/>
+        <icon src="res/ios/AppIcon.appiconset/Icon-76.png" width="76" height="76"/>
+        <icon src="res/ios/AppIcon.appiconset/Icon-76@2x.png" width="152" height="152"/>
+        <icon src="res/ios/AppIcon.appiconset/Icon-40.png" width="40" height="40"/>
+        <icon src="res/ios/AppIcon.appiconset/Icon-40@2x.png" width="80" height="80"/>
+        <icon src="res/ios/Icon.png" width="57" height="57"/>
+        <icon src="res/ios/Icon@2x.png" width="114" height="114"/>
+        <icon src="res/ios/Icon-72.png" width="72" height="72"/>
+        <icon src="res/ios/Icon-72@2x.png" width="144" height="144"/>
+        <icon src="res/ios/AppIcon.appiconset/Icon-Small.png" width="29" height="29"/>
+        <icon src="res/ios/AppIcon.appiconset/Icon-small@2x.png" width="58" height="58"/>
+        <icon src="res/ios/Icon-Small-50.png" width="50" height="50"/>
+        <icon src="res/ios/Icon-Small-50@2x.png" width="100" height="100"/>
+
+        <splash src="res/ios/splash/Default~iphone.png" width="320" height="480"/>
+        <splash src="res/ios/splash/Default~iphone@2x.png" width="640" height="960"/>
+        <splash src="res/ios/splash/Default-Portrait~ipad.png" width="768" height="1024"/>
+        <splash src="res/ios/splash/Default-Portrait~ipad@2x.png" width="1536" height="2048"/>
+        <splash src="res/ios/splash/Default-Landscape~ipad.png" width="1024" height="768"/>
+        <splash src="res/ios/splash/Default-Landscape~ipad@2x.png" width="2048" height="1536"/>
+        <splash src="res/ios/splash/Default-568h.png" width="640" height="1136"/>
+        <splash src="res/ios/splash/Default-667h.png" width="750" height="1334"/>
+        <splash src="res/ios/splash/Default-736h.png" width="1242" height="2208"/>
+        <splash src="res/ios/splash/Default-Landscape-736h.png" width="2208" height="1242"/>
+    </platform>
+</widget>

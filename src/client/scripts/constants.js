@@ -1,0 +1,37 @@
+export const ActionConstants = {
+
+  SCAN: 'SCAN',
+  SCAN_DISCOVERED: 'SCAN_DISCOVERED',
+  SCAN_SUCCESS: 'SCAN_SUCCESS',
+  SCAN_FAIL: 'SCAN_FAIL',
+
+  PAUSE_SCAN: 'PAUSE_SCAN',
+  RESUME_SCAN: 'RESUME_SCAN',
+
+  COLLR_CONNECT: 'COLLR_CONNECT',
+  COLLR_CONNECT_SUCCESS: 'COLLR_CONNECT_SUCCESS',
+  COLLR_CONNECT_FAIL: 'COLLR_CONNECT_FAIL',
+
+  COLLR_DISCONNECT: 'COLLR_DISCONNECT',
+  COLLR_DISCONNECT_SUCCESS: 'COLLR_DISCONNECT_SUCCESS',
+  COLLR_DISCONNECT_FAIL: 'COLLR_DISCONNECT_FAIL'
+
+};
+
+export const CollarStatus = {
+  CONNECTING: 'CONNECTING',
+  CONNECTED: 'CONNECTED',
+  ERROR: 'ERROR'
+};
+
+export const BluetoothStatus = {
+  PAUSED: 'PAUSED',
+  IDLE: 'IDLE', // initial status while scanning has not started, or after scan complete
+  SCANNING: 'SCANNING',
+  CONNECTING: 'CONNECTING',
+  CONNECTED: 'CONNECTED'
+};
+
+export const BluetoothConstants = {
+
+};

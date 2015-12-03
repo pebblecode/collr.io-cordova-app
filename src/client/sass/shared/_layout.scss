@@ -1,0 +1,151 @@
+
+* {
+  -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+  -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+  -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+  background-color: $body-bg;
+  color: $ink;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.server-error {
+  margin-bottom: 3vh;
+  font-size: 0.8em;
+  line-height: 1.4em;
+  padding: 15px;
+  background-color: $error-grad-light;
+  color: #fff;
+}
+
+.app-main {
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  height: 100%;
+  .inner-main {
+    height: 100%;
+  }
+  .sidebar {
+    display: none;
+  }
+  &.menu-expanded {
+    .inner-main {
+      position: relative;
+      left: -100px;
+    }
+  }
+}
+
+.scrollable {
+  //display: flex;
+  //flex-direction: column;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-top: 55px;
+  // overflow: scroll;
+}
+
+.page-contents {
+  padding: 20px 10% 0 10%;
+  color: $grey-lighter;
+}
+
+.headline-logo {
+  margin: 0 auto 35px auto;
+}
+
+.footer {
+  padding: 6vh 10% 6vh 10%;
+}
+
+.form-page {
+  text-align: center;
+  height: 100%;
+  background: $intro-screens-bg;
+  margin: 0 auto;
+
+  .page-contents {
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .content-wrapper {
+    height: 100%;
+    overflow: auto;
+  }
+  h1 {
+    text-transform: uppercase;
+    color: $grey-lighter;
+    font-size: $intro-screens-header-font-size;
+    margin: 2vh auto 6vh;
+    letter-spacing: 3px;
+  }
+  p {
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.5em;
+    padding: 0 20px;
+    strong {
+      font-weight: bold;
+    }
+    &.or {
+      font-weight: bold;
+      color: $yellow;
+      text-transform: uppercase;
+      font-size: 1.2em;
+      margin: 3vh auto;
+    }
+  }
+
+
+  .graphic_check {
+    margin: 10vh auto 4vh;
+  }
+
+  .graphic_resend {
+    margin: 14vh auto 4vh;
+  }
+
+  .footer {
+    padding: 6vh 0;
+
+    .loading-spinner {
+      margin: 0 auto;
+    }
+  }
+
+}
+
+
+
+

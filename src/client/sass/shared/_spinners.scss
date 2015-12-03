@@ -1,0 +1,39 @@
+.spinner-bluetooth {
+  margin: 0;
+  width: 36px;
+  height: 36px;
+  background: url('../images/icons/icon_bluetooth.png') no-repeat top left;
+}
+
+.loading-spinner {
+  border: 3px solid $bluetooth-blue;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spin-circle 1.3s infinite linear;
+  transform: translateZ(0);
+  width: 50px;
+  height: 50px;
+  text-indent: -9999px;
+  display: block;
+}
+
+.spinner-bluetooth .spinner {
+  border: 3px solid $bluetooth-blue;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spin-circle 1.3s infinite linear;
+  transform: translateZ(0);
+  width: 36px;
+  height: 36px;
+}
+
+@keyframes spin-circle {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,16 @@
+button, a.button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  text-decoration: none;
+  line-height: 2em;
+  padding: 6px 8px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.flex-fit button, .flex-fit a.button {
+  font-weight: 500;
+  margin: 25px auto;
+}
