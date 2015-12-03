@@ -14,7 +14,6 @@ class HomePage extends React.Component {
   constructor(props) {
     super(props);
     this.state = this.getDefaultState();
-    this._onAppChanged = this._onAppChanged.bind(this);
   }
 
   // RENDER
@@ -23,9 +22,7 @@ class HomePage extends React.Component {
     return (
       <div className='page page-home'>
         <div className='page-contents'>
-          <div className={this._loginFormClasses()}>
-            <h1>Home</h1>
-          </div>
+          <h1>Home</h1>
         </div>
         <div className='footer'>
         </div>

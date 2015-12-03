@@ -36,8 +36,6 @@ function init() {
     BluetoothService.init( require('./bluetooth/bleMock').default, {platform: 'Mock'} );
   }
 
-  // Configure the syncing processes
-  sync.init(isCordova());
   // Render the app
   ReactDOM.render(<Root/>, document.getElementById('app'));
 }
